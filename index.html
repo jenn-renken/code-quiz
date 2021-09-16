@@ -8,28 +8,57 @@
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
-    <div id="score">
-        <h3>View Highscores</h3>
+    <div id="viewHighScores">
+        <h3>View high scores</h3>
     </div>
     <div id="timer">
-        <h3>Time</h3>
+        <h3>
+            Time:
+            <span id="currentTime"></span>
+        </h3>
     </div>
-    <main class="start" id="start-screen">
-    <div>
-        <h1>Coding Quiz</h1>
+    <div id="wrapper">
+        <div id="intro">
+            <h1>Coding Quiz</h1>
+            <p>Answer the following questions within the time limit. Incorrect answers will deduct ten seconds from your time!</p>
+            <!-- <ul id="questionsUl"></ul> -->
+            <button id="startQuiz">Start Quiz</button>
+        </div>
+        <div id="question">
+            <h1 id="questionTitle">question title</h1>
+            <ul>
+                <li>choice 1</li>
+                <li>choice 2</li>
+                <li>choice 3</li>
+                <li>choice 4</li>
+            </ul>
+            <div id="correct">
+                Correct!
+            </div>
+            <div id="wrong">
+                Wrong!
+            </div>
+        </div>
+        <div id="initials">
+            <h1>All done!</h1>
+            <p>Your final score is
+                <span id="finalScore">22</span>
+            </p>
+            <p>
+                <label>
+                    Enter initials:
+                    <input>
+                </label>
+                <button>Submit</button>
+            </p>
+        </div>
+        <div id="scores">
+        <h1>Highscores</h1>
+            <ul id="highScore"></ul>
+            <button id="goBack">Go Back</button>
+            <button id="clear" value="reset">Clear Highscore</button>
+        </div>
     </div>
-    <p>
-        Welcome to the Coding Quiz! Answer the following questions correctly.
-    </p>
-    <div>
-        <button id="start-btn">Start Quiz</button>
-    </div>
-    <div class="hide" id="questions">
-        <h2 id="question-title"></h2>
-        <div id="question-choice"></div>
-    </div>
-        
-    </main>
 <script src="./assets/script.js"></script>
 </body>
 </html>
