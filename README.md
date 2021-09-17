@@ -1,5 +1,7 @@
 # code-quiz
 
+Link to live application: https://jenn-renken.github.io/code-quiz/
+
 ## Features
 - Starting the quiz will display the first question of five and start the countdown timer
 - Each incorrect answer will remove 10 seconds from the timer
