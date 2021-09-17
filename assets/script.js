@@ -12,7 +12,7 @@ var questions = [
     },
     {
         question: "A useful tool to debug code and print content is:",
-        choices: ["for()", "document.getElementById", ".addEventListener", "console.log()"],
+        choices: ["for()", "document.getElement", ".addEventListener", "console.log()"],
         answer: "console.log()"
     },
     {    
