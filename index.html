@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="./assets/style.css" />
 </head>
 <body>
-    <div id="viewHighScores">
-        <h3>View high scores</h3>
+    <div>
+        <h3 id="viewHighScores">View high scores</h3>
     </div>
-    <div id="timer">
-        <h3>
+    <div>
+        <h3 id="timer">
             Time:
             <span id="currentTime"></span>
         </h3>
     </div>
-    <div id="wrapper">
+    <div id="wrapper" style="display: none">
         <div id="intro">
             <h1>Coding Quiz</h1>
             <p>Answer the following questions within the time limit. Incorrect answers will deduct ten seconds from your time!</p>
@@ -26,16 +26,16 @@
         </div>
         <div id="question">
             <h1 id="questionTitle">question title</h1>
-            <ul>
+            <ul id="questionChoice">
                 <li>choice 1</li>
                 <li>choice 2</li>
                 <li>choice 3</li>
                 <li>choice 4</li>
             </ul>
-            <div id="correct">
+            <div class="answer" id="correct">
                 Correct!
             </div>
-            <div id="wrong">
+            <div class="answer" id="wrong">
                 Wrong!
             </div>
         </div>
@@ -47,9 +47,9 @@
             <p>
                 <label>
                     Enter initials:
-                    <input>
+                    <input id="inputInitials">
                 </label>
-                <button>Submit</button>
+                <button id="submitInitials">Submit</button>
             </p>
         </div>
         <div id="scores">

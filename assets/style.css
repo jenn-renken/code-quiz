@@ -6,6 +6,11 @@
     height: 500px;
     border: 1px solid purple;
 }
+
+#intro {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 20px;
+}
 #startQuiz {
     background-color: purple;
     margin-left: 33%;
@@ -13,12 +18,24 @@
     font-size: 20px;
     color: white;
 }
-#questionsDiv {
-    margin: 20px;
+
+#viewHighScores {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 20px;
+    color:purple;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    cursor: pointer;
 }
 
-#currentTime {
-    float: right;
+#timer {
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width:200px;
 }
 
 #goBack {
@@ -33,8 +50,6 @@
     text-align: center;
     text-decoration: none;
 }
-
-
 
 #clear {
     background-color: purple;
@@ -56,10 +71,21 @@ textarea {
     margin: 20px;
 }
 
+#initials {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-left: 20px;
+}
+
 #Submit {
     background-color: purple;
     margin-left: 33%;
     padding: 15px 32px;
+    font-size: 20px;
+    color: white;
+}
+
+#submitInitials {
+    background-color: purple;
     font-size: 20px;
     color: white;
 }
@@ -73,21 +99,37 @@ input {
     border: 1px solid lightgray;
 }
 
-h1 {
+#questionTitle {
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#questionChoice {
+    float: inherit;
 }
 
 li {
     background-color: purple;
+    border-radius: 12px;
     margin-top: 10px;
     padding: 5px 15px;
-    width: 80%;
+    width: 45%;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     color: white;
 }
 
-#createDiv {
-    margin-top: 20px;
-    border-top: 1px solid lightgray;
+#scores {
+    margin-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+/* .answer {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 25px;
+    color: gray;
+    font-style: italic;
+    border-top: 1px solid lightgray;
+} */
 
